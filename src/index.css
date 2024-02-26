@@ -1,0 +1,78 @@
+body {
+    background-image: url("../public/images/portfolio-bg-img.jpg.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.bgshade {
+    background-color: rgba(0,0,0,0.5);
+    height: 100vh;
+}
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 35px;
+    color: aliceblue;
+    font-weight:600 ;
+    text-decoration: none;
+    font-family: arial;
+}
+nav a{
+    font-size: 18px;
+    font-weight:500;
+    margin-left: 35px;
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.3s;
+}
+nav a:hover,
+nav a.active{
+    color: rgb(21, 119, 248);
+}
+ section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    padding: 20px 10%;
+ }
+ video {
+    width: 450px;
+    border-radius: 10px;
+ }
+ .video-area{
+    color: rgba(0,0,0,0.5);
+ }
+ .text-area {
+    color: white;
+ }
+ .text-area span{
+    color:  rgb(21, 119, 248);
+    font-size: 28px;
+    font-weight: 500;
+    
+ }
+ .btn-container{
+     width: 100%;
+     display: flex;
+ }
+ .btn-container button{
+    width: 50%;
+ }
+ .modal{
+    transition: 1s;
+ }
+ .offcanvas{
+    transition: 1s;
+ }
+ .offcanvas-body a{
+   margin-bottom: 20px;
+   width: 100%;
+ }
+

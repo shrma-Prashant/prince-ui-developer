@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashant | UI Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../src/index.css">
+</head>
+<body>
+     
+      <div class="bgshade">
+        <header>
+            <a href="#" class="logo"> PRA$H@NT. </a>
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./service.html">Service</a>
+                <a href="#">portfolio</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+        </header>
+        <section>
+            <div class="video-area">
+                <video src="./images/hero.mp4" class="me-5" autoplay loop muted></video>
+            </div>
+            <div class="text-area ms-5">
+               <h1>Hi ! I am Front End Devoloper</h1><br>
+                <span>HTML | CSS |  JAVASCRIPT | jQUERY | REACT</span>
+                <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet pariatur enim est dolorum neque qui. Nisi earum nesciunt ad aperiam veritatis, repudiandae reiciendis ipsa?</p>
+                <div class="btn-container mt-4   ">
+                     <button class="btn btn-primary me-5"  data-bs-target="#menu" data-bs-toggle="offcanvas">MY PROJECT</button> 
+                    <button class="btn btn-primary ms-5 "data-bs-target="#modal" data-bs-toggle="modal">HIRE ME</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="offcanvas offcanvas-start" id="menu">
+            <div class="offcanvas-header bg-dark text-white ">
+                <div class="offcanvas-title">MY PROJECT</div>
+                <button class="btn btn-close" data-bs-dismiss="offcanvas" ></button>
+            </div>
+            <div class="offcanvas-body d-inline">
+                <a href="./shopping.html" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-title="Online shopping Template" data-bs-placement="bottom"> shopping Template</a><br>
+                <a href="./netfilix.html" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-title="Netflix Template" data-bs-placement="bottom"> Netflix Template</a><br>
+                <a href="./instagram.html" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-title="Instagram Login Page" data-bs-placement="bottom"> instagram Template</a><br>
+                <a href="./Landkit.html" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-title="Landkit Template" data-bs-placement="bottom">  Landkit Template</a><br>
+                <a href="./colorlib-project.html" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-title="Colorlib Template" data-bs-placement="bottom"> Colorlib Template</a><br>
+                 
+            </div>
+        </div>
+
+        <!-- modal -->
+        <div class="modal fade" id="modal" data-bs-backdrop="static"  >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Enter Deteils</h1>
+                  <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="">
+                     <dl>
+                        <dt> Enter Your Email</dt>
+                             <dd> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" width="75%"></dd>
+                        <dt>Enter Contact Number</dt>
+                             <dd> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="number"width="75%"></dd>
+                     </dl>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+    </div>
+
+     <script>
+        
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  
+     </script>
+    
+</body>
+</html>

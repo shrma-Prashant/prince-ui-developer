@@ -1,5 +1,5 @@
 body {
-    background-image: url("../public/images/portfolio-bg-img.jpg.jpg");
+    background-image: url("public/images/portfolio-bg-img.jpg.jpg");
     background-size: cover;
     height: 100vh;
 }
